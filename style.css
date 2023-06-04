@@ -106,11 +106,27 @@ main h1 {
 }
 
 main img {
-    width:100%;
+    width:40%;
+}
+
+.poster {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 767px){
+    main {
+        margin-top:150px
+    }
     .menu {
         display: none;
+    }
+    .poster {
+        flex-direction: column;
+        align-items: center;
+    }
+    .poster img {
+        width: 95%;
     }
 }
